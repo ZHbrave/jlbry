@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header-menu"></div>
+        <div class="header-logo">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="/index.html"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="loginBanner">
+            <div class="loginForm">
+                <form action="">
+                    <dl>
+                        <dt>用户名</dt>
+                        <dd>
+                            <input type="text" id="username">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>密&nbsp;&nbsp;&nbsp;码</dt>
+                        <dd>
+                            <input type="password" id="password">
+                        </dd>
+                    </dl>
+                    <div class="vCode">
+                        <dl class="textCode">
+                            <dt>验证码&nbsp;:</dt>
+                            <dd>
+                                <input type="text">
+                            </dd>
+                        </dl>
+                        <span></span>
+                    </div>
+                </form>
+                <div class="isChecked" name="remb">
+                    <span><input type="checkbox" id="checkBtn">七天自动登录</span>
+                    <a href="javascript:;">忘记密码</a>
+                </div>
+                <div class="btnBox">
+                    <input type="submit" value="登录" id="login-btn1">
+                </div>
+                <div class="registerBox">
+                    <span>没有账号？</span>
+                    <a href="/html/register.html">立即免费注册>></a>
+                </div>
+                <div class="loginLink">
+                    <a href="javascript:;"><img src="/img/qq_hulian_login.png" alt="QQ" title="QQ"></a>
+                    <a href="javascript:;"><img src="/img/weibo_hulian_login.png" alt="新浪微博" title="新浪微博"></a>
+                    <a href="javascript:;"><img src="/img/weixin_hulian_login.png" alt="微信账号登录" title="微信账号登录"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrap">
+            <P><a href="/jlbry/src/index.html">首页</a></P>
+            <P><a href="/jlbry/src/index.html">冀ICP备11023373号-2</a></P>
+        </div>
+    </footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/login.js"></script>
+</body>
+</html>

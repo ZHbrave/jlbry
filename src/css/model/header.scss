@@ -1,0 +1,296 @@
+#header-container{
+    width: 100%;
+    min-width: 1200px;
+        .header-top{
+            background-color: #f1f1f1;
+            width: 100%;
+            height: 30px;
+        .wrap{
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            font-size: 12px;
+            a{
+                color: #717171;
+            }
+            .log-reg{
+                height: 30px;
+                float: left;
+                li{
+                    height: 30px;
+                    padding: 0 10px;
+                    line-height: 30px;
+                    float: left;
+                }
+                .after-login{
+                    display: none;
+                }
+            }
+            .menu{
+                float: right;
+                dl{
+                    float: left;
+                    height: 30px;
+                    width: 94px;
+                    dt{
+                        height: 30px;
+                        line-height: 30px;
+                        width: 68px;
+                        margin-left: 13px;
+                    }
+                    dd{
+                        display: none;
+                        position: absolute;
+                            z-index: 10;
+                        ul>li{
+                            width: 94px;
+                            height: 30px;
+                            line-height: 30px;
+                            background-color: #fff;
+                            
+                            a{
+                                margin-left:14px;
+                            }
+                            &:hover{
+                                background-color:#f7f7f7;
+                            }
+                        }
+                    }
+                    &:hover{
+                        background-color: #fff;
+                        &>dd{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            
+        }
+      }
+      .header-middle{
+        width: 100%;
+        height: 115px;
+        .wrap{
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            font-size: 12px;
+           .logo{
+               width: 240px;
+               float: left;
+               margin-right: 60px;
+               a{
+                display: inline-block;
+                width: 240px;
+                height: 60px;
+                margin-top: 32px;
+                
+                background: url(/img/05989796911194209.jpg) no-repeat left center;
+            }
+           }
+           .search-box{
+               width: 538px;
+               height: 70px;
+               margin-top: 32px;
+               margin-left: 35px;
+               float: left;
+               z-index: 3;
+               position: relative;
+               ul{
+                   position: absolute;
+                   left: 0;
+                   top: 0;
+                   z-index: 4;
+                   width: 60px;
+                   height: 40px;
+                   font-size: 13px;
+                  overflow: hidden;
+                  &:hover{
+                      overflow: initial;
+                  }
+                   li:nth-child(1){
+                       width: 60px;
+                       height: 40px;
+                      
+                       span{
+                           display: inline-block;
+                           color: #5c5c5c;
+                           width: 47px;
+                           height: 26px;
+                           margin-top: 7px;
+                            line-height: 26PX;
+                            padding-left: 12px;
+                            border-right: 1px solid #e9e9e9;
+                       }
+                   }
+                   .otherLi{
+                       width: 60px;
+                       height: 35px;
+                       line-height: 35px;
+                       text-align:center;
+                       background-color: #da0011;
+                       
+                       
+                       a{
+                           color: #fff;
+                       }
+                   }
+               }
+               form{
+                position:absolute;
+                z-index: 2;
+                left: 0;
+                top: 0; 
+                width: 536px;
+                height: 40px;
+                border: 1px solid #da0011;
+                .textInput{
+                    height: 38px;
+                    width:375px;
+                    margin-left:70px;
+                    color:#999;
+                    line-height: 40px;
+                    font-size: 12px;
+                    float: left;
+                }
+                .inputBtn{
+                    width: 91px;
+                    height: 40px;
+                    background-color: #da0011;
+                    line-height: 40px;
+                    color: #fff;
+                    font-size:18px;
+                    font-weight: bold;
+                    float: left;
+                }
+               }
+               .keyword{
+                   width: 500px;
+                   height: 25px;
+                   position: absolute;
+                   top:40px;
+                   left:0;
+                   z-index: 1;
+                   ul{
+                    width: 500px;
+                    height: 35px;
+                       display: flex;
+                      li{
+                          height: 30px;
+                          line-height: 35px;
+                          margin-right: 12px;
+                          font-size: 12px;
+                          a{
+                              color: #999;
+                          }
+                          &:hover{
+                              a{color:#da0011}
+                          }
+                      }
+                       
+                   }
+               }
+           }
+           .shop-container{
+               float: left;
+               margin-left: 103px;
+               margin-top: 32px;
+               dt{
+                   width: 130px;
+                   height: 20px;
+                   padding: 11px;
+                   border:1px solid #f0f0f0;
+                   a{
+                       display: inline-block;
+                      margin-left: 10px;
+                      color: #202020;
+                      i{
+                          font-size:15px;
+                          margin-right: 6px;
+                      }
+                      .car-num{
+                          display: inline-block;
+                          font-size: 12px;
+                          color: #fff;
+                          background-color: #da0011;
+                          width: 16px;
+                          height: 16px;
+                          border-radius: 8px;
+                          margin-left: 10px;
+                          text-align: center;
+                      }
+                   }
+               }
+               
+           }
+        }
+    }
+    .header-bottom{
+        width: 100%;
+        height: 40px;
+        .bot-wrap{
+            width: 1210px;
+            margin: 0 auto;
+            .menuBur{
+                width: 210px;
+                height: 40px;
+                background-color: #000;
+                float: left;
+                &:hover{
+                    .menulist{
+                        display: block;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: bold;
+                    margin-left: 40px;
+                }
+                .menulist{
+                    width: 210px;
+                    height: 800px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    display: none;
+                    li{
+                        ul{
+                            display: none;
+                        }
+                        &:hover{
+                            ul{
+                                display: block;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+            .most-nav{
+                width: 900px;
+                height: 40px;
+                float: left;
+                margin-left: 10px;
+                ul{
+                    width: 900px;
+                    height: 40px;
+                    li{
+                        float: left;
+                        a{
+                            display: inline-block;
+                            height: 40px;
+                            line-height: 40px;
+                            padding: 0 15px;
+                            color: #3c3c3c;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
