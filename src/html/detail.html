@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <!-- header 容器 -->
+    <header id="header-container"></header>
+    <main>
+        <div class="detail" id="detail">
+            <script type="text/html" id="detail-template">
+                <!-- 导航标题 -->
+                <div class="sldh-breadcrumb-layout">
+                    <div class="wrapper-top">
+                        <span class="nav_title_wrap">
+                            <span><a href="/">首页</a></span>
+                            <span class="arrow">></span>
+                            <span><a href="javascriput:;">宝宝奶粉</a></span>
+                            <span class="arrow">></span>
+                            <span><a href="/html/list.html">乐畅系列</a></span>
+                            <span class="arrow">></span>
+                            <span>{{data.text}}</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- detail容器 -->
+                <div class="bgcolor">
+                    <div class="wrapper">
+                        <div class="left">
+                            <div class="picture">
+                                <div class="view_bd">
+                                    <img class="zoom-img" src="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}"/>
+                                </div>
+                                <div class="view_thumbs" id="gal1">
+                                    <ul class="view-ul">
+                                        <li class="current">
+                                            <a href="#" data-image="{{data.img[0]}}" data-zoom-image="{{data.img[0]}}">
+                                                <img class="s" src="{{data.img[0]}}" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-image="{{data.img[1]}}" data-zoom-image="{{data.img[1]}}">
+                                            <img class="s" src="{{data.img[1]}}" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-image="{{data.img[2]}}" data-zoom-image="{{data.img[2]}}">
+                                            <img class="s" src="{{data.img[2]}}" /></a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>  
+                            <div class="ev_left_num">
+                                <span class=others_imp>
+                                    <a href="javascript:;">
+                                        <b class="iconfontfa fa-share-alt icon-1 bbc_color"></b>
+                                        <span class="spans">分享</span>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;" class="collect_goods">
+                                        <b class="iconfontfa icon-2 bbc_color fa-heart-o "></b>
+                                        <span class="spans">收藏</span>
+                                    </a>
+                                </span>
+                                <span class="cprodict">
+                                    <a href="javascript:;">
+                                        <b class="iconfontfa fa-exclamation-triangle icon-1 bbc_color"></b>
+                                        <span class="spans">举报</span>
+                                    </a>
+                                </span>
+                            </div> 
+                        </div>
+                        <div class="center">
+                            <h3>{{data.text}}</h3>
+                            <div class="obvious">
+                                <p>
+                                    <span class="mar-r">商城价</span>
+                                    <span class="mar-b-2">￥{{data.price}}</span>
+                                </p>
+                                <p>
+                                    <span class="mar-r">市场价</span>
+                                    <span class="mar-b-1">￥{{data.lprice}}</span>
+                                </p>
+                                <div class="sld_goods_detail_info">
+                                    <div class="sld-cumulative">累计评价<em>{{data.cnum}}</em></div>
+                                    <div class="sld-cumulative">累计销量<em>{{data.snum}}</em></div>
+                                </div>
+                                <div class="sld_mobile_qrcode">
+                                    <div class="qrcode_tit">手机购买<i class="iconfont icon-erweima"></i></div>
+                                    <div class="qrcode_pop">
+                                        <img src="/img/phone_code.png" alt="扫码支付">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery">
+                                <span class="config span_w">配置</span>
+                                <div class="jmyss-freight-select">
+                                    <span>请选择地区</span>
+                                    <b>V</b>
+                                </div>
+                                <span class="goods_have">有货</span>
+                                <em class="transport">卖家承担运费</em>
+                            </div>
+                            <!-- 门店服务 -->
+                            <div class="mendian">
+                                <span>门店服务<a href="javascript:;">门店自提</a><b>选择有货的门店下单，可立即提货</b></span>
+                            </div>
+                            <!-- 门店自提结束 -->
+                            <div class="jmyss-sale">
+                                <span class="lineh-6 mar_l ">数量</span>
+                                <span class="goods_num">
+                                    <input type="number" id="quantity" name="nums" value="1">
+                                </span>
+                                <span class="goods_stock">当前库存<span class="goods_stock_num">{{data.inventory}}</span>件</span>
+                            </div>
+                            <div class="carBox">
+                                <p class="buy_box">
+                                <a class="tuan_join_cart" id="add-car"data-id="{{data.id}}">加入购物车</a> 
+                                <a class="tuan_go">立即购买</a> 
+                                </p>
+                                <!-- 加入购物车提示框 -->
+                                <div class="jmyss-cart-popup">
+                                    <dl>
+                                        <dt>宝贝已成功添加到购物车<a title="关闭">X</a></dt>
+                                        <dd>购物车共有<strong id="bold_num">1</strong>总金额为：<em id="bold_mly" class="saleP">￥{{data.price}}</em></dd>
+                                        <dd class="btns">
+                                            <a href="javascript:;" class="jmyss-btn-orange2">去结算</a>
+                                            <a href="javascript:;">继续购物</a>                                    
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="track-tit">
+                                <h3>看了又看</h3>
+                                <span></span>
+                            </div>
+                            <ul class="look_again_goods">
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <img src="/img/looked_240.jpg" alt="">
+                                        <h5 class=" sld_goods_view_name">￥299</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <img src="/img/looked_240.jpg" alt="">
+                                        <h5 class=" sld_goods_view_name">￥299</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank">
+                                        <img src="/img/looked_240.jpg" alt="">
+                                        <h5 class=" sld_goods_view_name">￥299</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </main>
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/detail.js"></script>    
+</body>
+</html>

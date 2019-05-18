@@ -1,0 +1,548 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+main{
+    width: 100%;
+    height: auto;
+    .wrapper{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .sldh-breadcrumb-layout{
+        width: 100%;
+        .wrapper-top{
+            width: 1200px;
+            margin: auto;
+            text-align: left;
+            height: 40px;
+            padding: 2px 10px;
+            .nav_title_wrap{
+                font-size: 14px;
+                line-height: 40px !important;
+                color: #999;
+                letter-spacing: normal;
+                word-spacing: normal;
+                display: inline-block;
+                height: 20px;
+                zoom: 1;
+                a{
+                    color: #333;
+                }
+                .arrow{
+                    color: #333;
+                    margin: 0 6px;
+                    font-family: "宋体";
+                }
+            }
+        }
+    }
+    .bgcolor{
+        width: 100%;
+        height: 601px;
+        .left{
+            width: 368px;
+            height: auto;
+            margin-left: 10px;
+            margin-top: 10px;
+            float: left;
+            .view_bd{
+                width: 350px;
+                height: 350px;
+                vertical-align: middle;
+                font-size: 0;
+                line-height: 0;
+                border: 1px solid #eee;
+                position: relative;
+                img{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            .view-ul{
+                margin-top: 20px;
+                width: 355px;
+                height: 54px;
+                overflow: hidden;
+                li{
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+               
+            }
+            .ev_left_num{
+                padding-left: 0;
+                font-size: 12px !important;
+                padding-left: 10px;
+                padding-right: 0px;
+                margin-bottom: -7px;
+                cursor: pointer;
+                a{
+                    color: #333;
+                }
+                .spans{
+                    height: 16px;
+                    line-height: 16px;
+                }
+                .others_imp{
+                    margin-right: 16px;
+                    .icon-1{
+                        margin-right: 7px;
+                        position: relative;
+                        color: #e4393c;
+                        font-size: 15px;
+                        font-weight: bold;
+                        font-family: FontAwesome !important;
+
+                    }
+                }
+                .icon-2{
+                    margin-right: 5px;
+                    font-size: 15px;
+                    position: relative;
+                    color: #e4393c;
+                    font-family: FontAwesome !important;
+                    
+                }
+                .cprodict{
+                    margin: 0 10px 0 195px;
+                }
+            }
+        }
+        .center{
+            width: 627px;
+            margin-left: 10px;
+            float: left;
+            font-size: 12px;
+            h3{
+                font-size: 16px;
+                margin-top: 21px;
+                color: #555;
+                margin-bottom: 26px;
+                font-weight: 700;
+            }
+            .obvious{
+                
+                background: url(/img/goods_meta_bg.png) #f3f3f3 repeat-x 0 50%;
+                padding: 25px 15px 15px 20px;
+                position: relative;
+                margin-bottom: 6px;
+                p{
+                    font-size: 12px;
+                    clear: both;
+                    overflow: hidden;
+                    span{
+                        display: block;
+                        float: left;
+                        color: #8c8c8c;
+                        height: 24px;
+                        line-height: 24px;
+                    }
+                    .mar-r{
+                        width: 68px !important;
+                        height: 24px !important;
+                        display: block;
+                        float: left;
+                        line-height: 24px;
+                        letter-spacing: 5px;
+                    }
+                    .mar-b-2{
+                        font-size: 30px;
+                        color: #f42424;
+                        font-weight: bold;
+                    }
+                    .mar-b-1{
+                        color: #555;
+                        text-decoration: line-through;
+                    }
+                }
+                .sld_goods_detail_info{
+                    position: absolute;
+                    top: 30px;
+                    right: 18px;
+                    .sld-cumulative{
+                        float: left;
+                        padding-right: 10px;
+                        margin-right: 10px;
+                        line-height: 14px;
+                        border-right: 1px solid #d2d2d2;
+                        em{
+                            font-size: 14px;
+                            color: #D90311;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+                .sld_mobile_qrcode{
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    z-index: 8;
+                    text-align: right;
+                    .qrcode_tit{
+                        color: #8c8c8c;
+                        line-height: 24px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        .iconfont{
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin: -1px 0 0 5px;
+                            font-family: "iconfont" !important;
+                            font-size: 16px;
+                            font-style: normal;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                    }
+                    .qrcode_pop{
+                        position: relative;
+                        z-index: 99;
+                        right: -52px;
+                        width: 180px;
+                        height: auto;
+                        background-color: #fff;
+                        box-shadow: 0px 2px 10px rgb(204, 204, 204);
+                        text-align: center;
+                        margin-top: 8px;
+                        display: none;
+                        padding: 10px;
+                        img{vertical-align: middle;}
+                    }
+                    &:hover{
+                        .qrcode_pop{display: block;}
+                    }
+                }
+            }
+            .delivery{
+                .span_w{
+                    width: 55px;
+                    float: left;
+                    height: 16px;
+                    color: #8c8c8c;
+                    text-overflow: ellipsis;
+                    display: -webkit-box !important;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    word-wrap: break-word;
+                    word-break: normal;
+                    overflow: hidden;
+                }
+                .config{
+                    margin-top: 13px;
+                    margin-left: 15px;
+                    font-size: 12px;
+                }
+                .jmyss-freight-select{
+                    margin-top: 8px;
+                    height: 28px;
+                    display: inline-block;
+                    margin-right: 6px;
+                    font-size: 12px;
+                    span{
+                        line-height: 26px;
+                        background-color: #FFF;
+                        height: 26px;
+                        float: left;
+                        padding: 0 20px 0 15px;
+                        border: solid 1px #E6E6E6;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    b{
+                        font-size: 0;
+                        line-height: 0;
+                        background: url(/img/sld_jmyss_public_img.png) no-repeat -50px -100px;
+                        display: block;
+                        width: 8px;
+                        height: 4px;
+                        position: absolute;
+                        top: 10px;
+                        right: 6px;
+                        overflow: hidden;
+                    }
+                }
+                .goods_have{
+                    font-size: 14px;
+                    margin: 10px 10px 0 10px;
+                    display: inline-block;
+                    line-height: 25px;
+                    vertical-align: top;
+                }
+                .transport{
+                    line-height: 25px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    font-size: 12px;
+                    color: #333;
+                }
+            }
+            .mendian{
+                position: relative;
+                padding: 10px 0px 25px;
+                span{
+                    margin-top: 8px;
+                    margin-left: 15px;
+                    font-size: 12px;
+                    a{
+                        color: #e4393c;
+                        margin-left: 5px;
+                        margin-right: 8px;
+
+                    }
+                    b{
+                        font-weight: normal;
+                    }
+                }
+            }
+            .jmyss-sale{
+                z-index: 3;
+                padding-left: 15px;
+                font-size: 12px;
+                vertical-align: bottom;
+                margin-top: 14px !important;
+                margin-bottom: 14px !important;
+                clear: both;
+                overflow: hidden;
+                .lineh-6{
+                    height: 42px !important;
+                    line-height: 42px;
+                    width: 55px;
+                    float: left;
+                    color: #8c8c8c;
+                    text-overflow: ellipsis;
+                    display: -webkit-box !important;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    word-wrap: break-word;
+                    word-break: normal;
+                    overflow: hidden;
+                }
+                .goods_num{
+                    width: 65px;
+                    span{
+                        line-height: 17px;
+                    }
+                    a{
+                        font-size: 0;
+                        background-color: #FFF;
+                        background: url(/img/sld_jmyss_public_img.png) no-repeat;
+                        display: block;
+                        width: 17px;
+                        height: 17px;
+                        border-style: solid;
+                        border-color: #E6E6E6;
+                        border-width: 1px 1px 1px 0;
+                        position: absolute;
+                        z-index: 1;
+                        left: 42px;
+                    }
+                    .decrease{
+                        background-position: -120px -100px;
+                        top: 18px;
+                    }
+                    #quantity{
+                        color: #333;
+                        font-family: Tahoma;
+                        line-height: 37px;
+                        text-align: center;
+                        height: 37px;
+                        width: 65px;
+                        padding: 0;
+                        border: solid 1px #E6E6E6;
+                    }
+                    .increase{
+                        background-position: -120px -100px;
+                        top: 18px;
+                    }
+                }
+                .goods_stock{
+                    margin-left: 30px;
+                    .goods_stock_num{
+                        padding: 0 5px;
+                        line-height: 35px !important;
+                    }
+                }
+            }
+            .carBox{
+                position: relative;
+                .buy_box{
+                    font-size: 12px;
+                    vertical-align: bottom;
+                    .tuan_join_cart{
+                        display: inline-block;
+                        line-height: 40px;
+                        vertical-align: bottom;
+                        padding: 0 30px;
+                        text-align: center;
+                        font-size: 18px;
+                        height: 40px;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        margin-right: 8px;
+                        margin-left: 55px;
+                        background: #e4393c;
+                        color: #fff !important;
+                    }
+                    .tuan_go{
+                        display: inline-block;
+                        line-height: 40px;
+                        vertical-align: bottom;
+                        padding: 0 30px;
+                        text-align: center;
+                        font-size: 18px;
+                        height: 40px;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        border: 2px solid #e4393c;
+                        height: 36px !important;
+                        line-height: 36px !important;
+                        color: #f42424;
+                        font-weight: bold;
+
+                    }
+                }
+                .jmyss-cart-popup{
+                    display: none;
+                    height: 150px;
+                    z-index: 11;
+                    left: 50%;
+                    background-color: #fff;
+                    border: 8px solid #bcbcbc;
+                    position: fixed;
+                    width: 455px;
+                    top: 281px;
+                    margin-left: -225px;
+                    dl{
+                        dt{
+                            text-align: center;
+                            width: 100%;
+                            margin: 10px 0 5px 0;
+                            font-size: 18px;
+                            color: #ec5051;
+                            font-weight: 700;
+                            a{
+                                font: 10px/12px Verdana;
+                                color: #999;
+                                text-align: center;
+                                width: 12px;
+                                height: 12px;
+                                float: right;
+                                margin: -5px 5px 0 0;
+                                cursor: pointer;
+                            }
+                        }
+                        dd{
+                            text-align: center;
+                            width: 100%;
+                            margin: 10px 0 5px 0;
+                            strong{
+                                font-weight: bold
+                            }
+                            .saleP{
+                                font-weight: 600;
+                                color: #ec5051;
+                                vertical-align: middle;
+                            }
+                        }
+                        .btns{
+                            a{
+                                font: normal 12px/20px "Microsoft Yahei";
+                                color: #777;
+                                background-color: #F5F5F5;
+                                text-align: center;
+                                vertical-align: middle;
+                                display: inline-block;
+                                height: 20px;
+                                margin-right: 2px;
+                                border-style: solid;
+                                border-width: 1px;
+                                border-color: #DCDCDC #DCDCDC #B3B3B3 #DCDCDC;
+                                cursor: pointer;
+                                padding: 5px 20px;
+                                border-radius: 2px;
+
+                            }
+                            .jmyss-btn-orange2{
+                                border-color: #f99c00;
+                                background-color: #f99c00;
+                                color: #fff;
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .right{
+            width: 175px;
+            padding: 0px 5px;
+            float: right;
+            background: #fff;
+            .track-tit{
+                position: relative;
+                line-height: 50px;
+                font-size: 12px;
+                color: #666;
+                font-weight: 400;
+                text-align: center;
+                h3{
+                    position: relative;
+                    z-index: 2;
+                    display: inline-block;
+                    background: #fff;
+                    padding: 0 25px;
+                }
+                span{
+                    position: absolute;
+                    z-index: 1;
+                    left: 0;
+                    right: 0;
+                    top: 25px;
+                    height: 1px;
+                    background: #f2f2f2;
+                }
+            }
+            .look_again_goods{
+                padding-left: 16px;
+                display: inline-block;
+                li{
+                    float: left;
+                    text-align: center;
+                    margin-bottom: 14px;
+                    margin-right: 15px;
+                    overflow: hidden;
+                    position: relative;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                            margin-bottom: 14px;
+                        }
+                        .sld_goods_view_name{
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 14px;
+                            line-height: 25px;
+                            height: 25px;
+                            background: rgba(255,255,255,.9);
+                            padding-left: 10px;
+                        }
+                    }
+                    &::hover{
+                        .sld_goods_view_name{color:#e4393c;}
+                    }
+                }
+            }
+        }
+    }
+}

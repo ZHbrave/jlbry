@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表-君乐宝</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <!-- header容器 -->
+    <header id="header-container"></header>
+    <main>
+        <div class="sldh-breadcrumb-layout">
+            <div class="sldh-breadcrumb-wrapper">
+                <div class="sld_hot_sale">
+                    <div class="hot-sale">热卖推荐</div>
+                    <div class="mc">
+                        <dl>
+                            <dt><a href="javascript:;"><img src="http://www.jlbry.com/data/upload/mall/store/goods/1/1_05965664984334295_240.jpg" alt=""></a></dt>
+                            <dd>
+                                <div class="p-name"><a href="javascript:;">君乐宝乐畅150G盒装3段12-36个月幼儿配方奶粉</a></div>
+                                <div class="p-price"> ¥29.00 </div>
+                                <div class="btns"><a href="javascript:;">立即购买</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;"><img src="http://www.jlbry.com/data/upload/mall/store/goods/1/1_05965664984334295_240.jpg" alt=""></a></dt>
+                            <dd>
+                                <div class="p-name"><a href="javascript:;">君乐宝乐畅150G盒装3段12-36个月幼儿配方奶粉</a></div>
+                                <div class="p-price"> ¥29.00 </div>
+                                <div class="btns"><a href="javascript:;">立即购买</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;"><img src="http://www.jlbry.com/data/upload/mall/store/goods/1/1_05965664984334295_240.jpg" alt=""></a></dt>
+                            <dd>
+                                <div class="p-name"><a href="javascript:;">君乐宝乐畅150G盒装3段12-36个月幼儿配方奶粉</a></div>
+                                <div class="p-price"> ¥29.00 </div>
+                                <div class="btns"><a href="javascript:;">立即购买</a></div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="javascript:;"><img src="http://www.jlbry.com/data/upload/mall/store/goods/1/1_05965664984334295_240.jpg" alt=""></a></dt>
+                            <dd>
+                                <div class="p-name"><a href="javascript:;">君乐宝乐畅150G盒装3段12-36个月幼儿配方奶粉</a></div>
+                                <div class="p-price"> ¥29.00 </div>
+                                <div class="btns"><a href="javascript:;">立即购买</a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="nav_title_wrap">
+                    <span><a href="/">首页</a></span>
+                    <span class="arrow">></span>
+                    <span><a href="javascriput:;">宝宝奶粉</a></span>
+                    <span class="arrow">></span>
+                    <span>乐畅系列</span>
+                </span>
+            </div>
+        </div>
+        <div class="wrap">
+            <!-- 推荐展位 -->
+            <div class="left">
+                <div class="sldh-module">
+                    <div class="title">
+                        <h3>最近浏览</h3>
+                    </div>
+                    <div class="content">
+                        <div class="aside-list">
+                            <div class="p-img">
+                                <a href="javascript:;"><img src="http://www.jlbry.com/data/upload/mall/store/goods/1/1_05965664984334295_240.jpg" alt=""></a>
+                            </div>
+                            <div class="p-name">
+                                <a href="javascript:;">君乐宝乐畅150G盒装3段12-36个月幼儿配方奶粉</a>
+                            </div>
+                            <div class="p-price">
+                                <span class="sale-price">¥29.00</span>
+                                <span class="sale-num">已售43件</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <nav class="sort-bar">
+                    <div class="sldh-sortbar-array">
+                        排序方式：
+                        <ul>
+                            <li class="selected"><a href="javascript:;">默认</a></li>
+                            <li><a href="javascript:;">销量<i></i></a></li>
+                            <li><a href="javascript:;">人气<i></i></a></li>
+                            <li><a href="javascript:;">价格<i></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="sldh-sortbar-location">
+                        <span class="select_area">商品所在地：</span>
+                        <div class="select-layer">
+                            <div class="holder">
+                                <em bbc_type="area_name">不限地区</em>
+                                <i class="direction"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="type-bar">
+                    <div class="sldh-sortbar-owner">
+                        <span>
+                            <a href="javascript:;" ><i class="selected"></i>全部</a>
+                        </span>
+                        <span>
+                                <a href="javascript:;"><i></i>自营</a>
+                        </span>
+                        <span>
+                                <a href="javascript:;"><i></i>加盟</a>
+                        </span>
+                    </div>
+                </nav>
+                <!-- 商品列表循环 -->
+                <ul class="list_pic" id="ul-container">
+                    <script type="text/html" id="ul-template">
+                        {{each list item}}
+                        <li>
+                            <div class="goods-content">
+                                <div class="goods-pic"><a href="/html/detail.html?id={{item.id}}"><img src="{{item.img}}" alt=""></a></div>
+                                <div class="goods-info">
+                                    <div class="goods-price">
+                                        <span class="sld_goods_price_unite">￥</span>
+                                        <em class="sale-price" title="商城价：¥299.00">{{item.price}}</em>
+                                    </div>
+                                    <div class="goods-name">
+                                        <a href="/html/detail.html?id={{item.id}}">{{item.text}}</a>
+                                    </div>
+                                    <p class="sale-eval">
+                                        <span class="cr_xie_argue">已售<a>{{item.snum}}</a></span>
+                                        <span class="cr_xie_argue">评论数<a>{{item.cnum}}</a></span>
+                                    </p>
+                                    <a href="/" class="shop_name">junlebao</a>
+                                    <span class="collect_cart_gobuy">
+                                        <a href="javascript:;" class="cr_xie_lia2">
+                                            <span class="cr_xie_lia2_span1"></span>
+                                            <span class="cr_xie_lia2_span2 ">关注</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </script>
+                </ul>
+                <div class="mb20">
+                    <div class="pagination">
+                        <ul>
+                            <li><span>首页</span></li>
+                            <li><span>上一页</span></li>
+                            <li><span class="currentpage">1</span></li>
+                            <li><span>下一页</span></li>
+                            <li><span>末页</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/list.js"></script>
+</body>
+</html>

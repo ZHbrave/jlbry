@@ -4,6 +4,7 @@ define(['jquery','cookie'],$=>{
         this.load().then(()=>{
             this.search();
             this.isLogin();
+            this.calcCartNum();
         })
     }
     //对象合并
@@ -12,7 +13,7 @@ define(['jquery','cookie'],$=>{
         load(){
         //把header.html加载到container里
             return new Promise(resolve=>{
-                this.container.load('/html/model/header.html',()=>{
+                this.container.load('/html/module/header.html',()=>{
                     resolve()
                 })
             })
@@ -50,6 +51,22 @@ define(['jquery','cookie'],$=>{
                     this.afterLogin.hide();
                 }
             })
+        },
+
+        calcCartNum(){
+            let cart =localStorage.getItem('cart');
+            let num=0;
+            if(cart){
+                //计算总数量
+                cart=JSON.parse(cart),
+                //num放的是商品总数量？还是种类的数量
+                //以总数量为例子
+                num=cart.reduce((n,shop)=>{
+                    n+=shop.num;
+                    return n;
+                },0)
+            }
+            $(".car-num").html(num);
         }
      })
     return new Header()

@@ -1,2 +1,125 @@
-@import "model/base.scss";
-@import "model/header.scss";
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+.groups{
+    background-color: #f4f4f4;
+    width: 100%;
+    height: auto;
+    .swiper-container{
+        width: 100%;
+        height: 500px;
+    }
+    .swiper-wrapper{
+        width: 100%;
+        height: 500px;
+        // position: relative;
+        .swiper-slide{
+            width: 100%;
+            height:500px;
+            // position: absolute;
+            a{
+                display: inline-block;
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                img{
+                    position: relative;
+                    left: -960px;
+                    margin-left: 50%;
+                }
+            }
+        }
+    }
+    .wrap{
+        width: 1210px;
+        height: inherit;
+        margin: 0 auto;
+        .drap-item{
+            height: 80px;
+            margin: 15px auto;
+            a{
+            display: inline-block;
+            width: 1210px;
+            height: 80px;
+            background: url(/img/gengxin.jpg) no-repeat center center;
+            }
+        }
+        .products{
+            height: 200px;
+            display: flex;
+            margin: 15px auto;
+            li{
+                width: 403px;
+                height: 200px;
+                &:hover{
+                    opacity: 0.8;
+                }
+                a{
+                    display: inline-block;
+                    width: 403px;
+                    height: 200px;
+                }
+            }
+        }
+        .advantage{
+            height: 200px;
+            margin: 15px auto;
+            display: flex;
+            li{
+                width: 302px;
+                height: 200px;
+                a{
+                    display: inline-block;
+                    width: 302px;
+                    height: 200px; 
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+        .hotProduct{
+            width: 1210px;
+            height: 600px;
+            margin: 15px auto;
+            a{
+                display: inline-block;
+                width: 1210px;
+                height: 600px;
+                background:url(/img/06020025079998168.jpg) no-repeat;
+            }
+        }
+        .power-information{
+            height: 250px;
+            margin: 15px auto;
+            display: flex;
+            li{
+                width: 403px;
+                height: 250px;
+                &:hover{
+                    opacity: 0.8;
+                }
+                a{
+                    display: inline-block;
+                    width: 403px;
+                    height: 250px;
+                }
+            }
+        }
+        .product-line{
+            height: 345px;
+            margin: 28px auto;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 396px;
+                height: 345px;
+                a{
+                    width: 396px;
+                    height: 345px;
+                }
+            }
+        }
+    }
+}

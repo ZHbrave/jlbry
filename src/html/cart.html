@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>君乐宝官网</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <header id="header-container"></header>
+    <main>
+        <div class="wrapper">
+            <div class="cart-container">
+                <h3 class="title">我的购物车</h3>
+                <div class="cart-btns">
+                    <a href="javascript:;">普通购物车</a>
+                </div>
+               
+                    <div class="cart-containner">
+                        <ul class="ul-title">
+                            <li class="checkAll">
+                                <label>
+                                    <input type="checkbox" class="selectAll" checked="checked" id="selectAll">全选
+                                </label>
+                            </li>
+                            <li class="pic"></li>
+                            <li class="shopname">商品</li>
+                            <li class="table-th">单价(元)</li>
+                            <li class="table-th">数量</li>
+                            <li class="table-th">小计</li>
+                            <li class="operate">操作</li>
+                        </ul>
+                        <div class="shop-active">
+                            <a href="/">junlebao</a>
+                            <div class="sale-text"><span>免运费</span>满100免运费</div>
+                        </div>
+                        <div class="cart-shop">
+                            <script type="text/html" id="cart-template">
+                                {{each cart item}}
+                                <ul class="shop-box">
+                                    <li class="every-check">
+                                        <input type="checkbox" checked="checked" class="checks">
+                                    </li>
+                                    <li class="spic"><a href="/html/detail.html"><img src="{{item.img[0]}}" alt=""></a></li>
+                                    <li class="shopName"><a href="/html/detail.html">{{item.text}}</a></li>
+                                    <li class="price">{{item.price}}</li>
+                                    <li class="num">
+                                        <a  href="javascript:;" class="minus" id="minus">-</a>
+                                        <span id="numValue">{{item.num}}</span>
+                                        <a href="javascript:li" id="plus">+</a>
+                                    </li>
+                                    <li class="subtotal">{{item.price*item.num}}</li>
+                                    <li class="shop-operate">
+                                        <div class=" del  car-btns" id="del">删除</div>
+                                        <div class="car-btns">移入收藏夹</div>
+                                    </li>
+                                </ul>
+                                {{/each}}
+                            </script>
+                        </div>
+                        <div class="last-money">
+                            <div class="total-price">商品总价格(不含运费)<span id="moneyContainer">29</span>元</div>
+                            <a href="javascriput:;">去结算</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/cart.js"></script>
+</body>
+</html>
